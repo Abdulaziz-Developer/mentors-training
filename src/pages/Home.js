@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import Cards from "./Profile/Cards";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
+  const [search, setSearch] = useState("");
+
   return (
-    <div class="container">
-      <input type="text" placeholder="Search..." />
-      <div class="search"></div>
+    <div className="wrapper">
+      <div className="container">
+        <div role="search" className="search-form form">
+          <label>
+            <span className="screen-reader-text">Search for...</span>
+            <input
+              type="search"
+              className="search-field"
+              placeholder="Type something..."
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </label>
+          <div className="glass">
+            <input type="button" className="search-submit button" />
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </div>
+        </div>
+      </div>
+      <Cards search={search} />
     </div>
   );
 }
