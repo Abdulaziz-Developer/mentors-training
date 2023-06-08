@@ -12,7 +12,7 @@ const Cards = ({ search }) => {
             .filter((student) => {
               return search.toLowerCase() === ""
                 ? student
-                : student.name.toLowerCase().includes(search);
+                : student.name.toLowerCase().includes(search.toLowerCase());
             })
             .map((student) => (
               <Card

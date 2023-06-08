@@ -71,12 +71,12 @@ export const students = [
   },
   {
     id: 8,
-    name: "Bader",
+    name: "Meraj",
     title: "Student at CODED",
     image:
       "https://www.flaticon.com/download/icon/4139981?icon_id=4139981&author=250&team=250&keyword=Man&pack=4139947&style=Flat&style_id=133&format=png&color=%23000000&colored=2&size=512%2C256%2C128%2C64%2C32%2C24%2C16&selection=1&type=standard&search=male+avatar",
     snack: "🍫",
-    grade: "80%",
+    grade: "89%",
     emojis: "😬",
   },
   {
