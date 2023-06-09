@@ -17,12 +17,10 @@ const Cards = ({ search }) => {
             .map((student) => (
               <Card
                 key={student.id}
+                id={student.id}
                 name={student.name}
                 title={student.title}
                 avatar={student.image}
-                snack={student.snack}
-                grade={student.grade}
-                emoji={student.emojis}
               />
             ))}
         </div>

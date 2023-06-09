@@ -3,7 +3,7 @@ import Cards from "./Profile/Cards";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-function Home() {
+const Home = () => {
   const [search, setSearch] = useState("");
 
   return (
@@ -28,6 +28,6 @@ function Home() {
       <Cards search={search} />
     </div>
   );
-}
+};
 
 export default Home;

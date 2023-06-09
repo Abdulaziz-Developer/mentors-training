@@ -1,5 +1,5 @@
 body {
-  background: #292826;
+  background: #222;
 }
 
 .wrapper {
@@ -98,7 +98,7 @@ input.search-submit {
   line-height: 1.15;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  background: #3a62a8;
+  background: #375b9d;
   /* color: #292826; */
   border: 1px solid transparent;
   vertical-align: middle;
@@ -111,7 +111,7 @@ input.search-submit {
 .button:hover,
 .button:active,
 .button:focus {
-  background: #2a4678;
+  background: #315089;
   color: #292826;
   outline: 0;
 }
